@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 70px;
+}
+
+header, footer {
+    margin-bottom: 20px;
+}
+
+.event, article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+.gallery-item {
+    width: 100%;
+    max-width: 300px; /* або інший бажаний максимальний розмір */
+    height: 200px; /* фіксована висота блоку, можна змінювати за потребою */
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* або 'contain', в залежності від вашої потреби */
+    object-position: center; /* центрує зображення у блоку */
+}
